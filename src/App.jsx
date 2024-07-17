@@ -12,6 +12,7 @@ import { Data } from './context/Data'
 import { useEffect } from 'react'
 import axios from "axios"
 import toast, {Toaster} from "react-hot-toast"
+import Propos from './component/Propos/Propos'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,7 @@ function App() {
   });
   // this useeffect to send an axios request to the end point
   useEffect(()=>{
-    axios.get("http://localhost/MY_PROJECTS/electronic_project/product.php").then((res)=>{
+    axios.get("http://localhost/MY_PROJECTS/cosmetic/product.php").then((res)=>{
       window.sessionStorage.setItem("data",JSON.stringify(res.data))
       setAllProduct(res.data)
     })
@@ -65,6 +66,7 @@ function App() {
       <Routes>
         <Route  index element={<Home />}/>
         <Route  path='/Categorie' element={<Categorie />}/>
+        <Route  path='/Propos' element={<Propos />}/>
         <Route  path='/Contact' element={<Contact />}/>
         <Route path='/ProductDetails/:id' element={<Detail />} />
       </Routes>

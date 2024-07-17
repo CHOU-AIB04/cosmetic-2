@@ -10,12 +10,31 @@
 ::-webkit-scrollbar-track {
   background: transparent; /* this one for the background-color of scroll container */
 }
-
-::-webkit-scrollbar-thumb {
-  background: rgba(2, 32, 139, 0.753); /* Change to orangered color */
-  border-radius: 10px;
+.text2{
+  color: #d4ae24;
+}
+.text{
+  color:#d9eee1 ;
+}
+.back2{
+  background-color: #f0E2D3;
+}
+.back{
+  background-color:#d9eee1 ;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #d4ae24; /* Change to orangered color */
+  border-radius: 10px;
+}
+.bg{
+  background-color: #f0E2D3;
+
+}
+.bg1{
+  background-color: #dbc98a ;
+
+}
 ::-webkit-scrollbar-thumb:hover {
   background: white; /* Adjust hover color if needed */
 }
@@ -23,20 +42,20 @@
     font-family:Arial, Helvetica, sans-serif
 }
 .insh{
-  box-shadow: inset 0 0 10px rgba(0, 49, 102, 0.753);
+  box-shadow: inset 0 0 10px #d4ae24;
 
 }
 .text-sh{
-  text-shadow: 10px 10px 5px rgba(0, 49, 102, 0.753);
+  text-shadow: 10px 10px 5px #d4ae24;
 }
 .sh{
-  box-shadow: 0 0 10px rgba(0, 49, 102, 0.753);
+  box-shadow: 0 0 10px #d4ae24;
 }
 .aft::after{
   position: absolute;
   content: "";
   width: 100%;
-  border-bottom: 2px solid rgba(0, 49, 102, 0.753);
+  border-bottom: 2px solid #d4ae24;
   left: 0;
   bottom: -2px;
 }
@@ -45,7 +64,7 @@
   position: absolute;
   content: "";
   width: 80%;
-  border-bottom: 2px solid rgba(0, 49, 102, 0.753);
+  border-bottom: 2px solid #d4ae24;
   left: 50%;
   transform: translate(-50%);
   bottom: -10px;
@@ -60,8 +79,9 @@
 
 body{
   font-family: 'Poppins', sans-serif ;
+  overflow-x: hidden;
 }
-
+/* 
 h1{
   color: white;
   font-size: 2.5rem;
@@ -188,7 +208,7 @@ hr{
 }
 
 /*Mobile Nav  */
-.navbar-light .navbar-toggler{
+/* .navbar-light .navbar-toggler{
   border: none;
   outline: none;
 }
@@ -308,11 +328,11 @@ hr{
   flex-direction: column;
   align-items: flex-end;
   text-align: end;
-}
+} */
 
 
 /* Products */
-.product
+/* .product
 {
   cursor: pointer;
   margin-bottom: 2rem;
@@ -425,5 +445,5 @@ footer .copyright a
 
 footer .copyright a:hover{
   background-color: rgb(0, 0, 0);
-}
+} */
 
